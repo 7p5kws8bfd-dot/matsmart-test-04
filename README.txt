@@ -1,14 +1,11 @@
-Matsmart 0.4 – TESTVERSION
+Matsmart 0.4.1 – TESTVERSION
 
-Publicera i ett NYTT GitHub-repo, exempelvis matsmart-test-04, inte i det ordinarie matsmart-test.
-Ladda upp index.html, scanner.js, catalog.js, manifest.webmanifest, icon-192.png och icon-512.png.
-Aktivera Settings > Pages > Deploy from branch > main > /(root).
+Publicera filerna i matsmart-test-04 via GitHub. Ersätt index.html, scanner.js, catalog.js och manifest.webmanifest. Ikonerna är oförändrade.
 
-Viktigt:
-- Testförrådet använder ny lokalStorage-nyckel och läser inte 0.2.4-förrådet.
-- Produktregister med egna foton lagras lokalt på samma enhet och samma webbplats.
-- Den gamla backupfunktionen exporterar bara förrådsvarorna, INTE produktbilderna.
-- Radera inte gamla Matsmart eller webbplatsdata. Exportera säkerhetskopia i gamla appen först.
-- Kameraskannern kräver internet för ZXing/Quagga2 och produktuppslagning.
-- Kontrollera alltid avläst EAN innan du trycker Stämmer.
-- Testad med JS-syntaxkontroll, inte med fysisk iPhone-kamera.
+NYTT: Kamera startar direkt efter tryck på Skanna streckkod. Safari/iOS frågar om kameratillgång vid behov.
+NYTT: Bilder från Open Food Facts visas i registreringsformulär och i matförrådet när de finns. Egna foton prioriteras.
+NYTT: Säkerhetskopia inkluderar egna produktuppgifter och bilder. Tidigare backup (version 1) kan fortfarande importeras.
+
+VIKTIGT: Testförrådet använder samma lagringsnyckel som 0.4 för att behålla testvarorna. Exportera säkerhetskopia innan uppdatering. Detta är INTE det ordinarie 0.2.4-förrådet. Bilder från Open Food Facts kräver internet.
+
+Skannern behöver tillgång till kamera och nätverk. Kontrollera EAN mot förpackningen.
